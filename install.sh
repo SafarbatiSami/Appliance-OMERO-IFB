@@ -50,6 +50,8 @@ curl -LJO https://github.com/GReD-Clermont/NucleusJ2/releases/download/v2.1.0/nu
 mv nucleusj_2-2.1.0.jar /ifb/bin/Fiji.app/plugins/
 
 #5. Install NODeJ
+curl -LJO https://gitlab.com/api/v4/projects/22788291/packages/maven/burp/NODeJ/1.0.5/NODeJ-1.0.5.jar
+mv NODeJ-1.0.5.jar /ifb/bin/Fiji.app/plugins/
 
 
 
