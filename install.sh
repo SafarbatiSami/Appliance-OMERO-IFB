@@ -30,14 +30,32 @@ chown ubuntu ~ubuntu/Desktop/Fiji.desktop
 curl -LJO https://github.com/ome/omero-insight/releases/download/v5.8.1/omero_ij-5.8.1-all.jar
 mv omero_ij-5.8.1-all.jar /ifb/bin/Fiji.app/plugins/
 
-# OR IF NOT FIJI
-
-curl -LJO https://github.com/ome/omero-insight/releases/download/v5.8.3/OMERO.insight-5.8.3.zip
-unzip OMERO.insight-5.8.3.zip
-
-
 #----------------------------------------------------------------------------
-# Install NucleusJ2.0 
+# Add GReD OMERO plugins
+
+# 1. simple-omero-client
+curl -LJO https://github.com/GReD-Clermont/simple-omero-client/releases/download/5.12.3/simple-omero-client-5.12.3.jar
+mv simple-omero-client-5.12.3.jar /ifb/bin/Fiji.app/plugins/
+
+# 2. omero_batch-plugin (need simple-omero-client)
+curl -LJO https://github.com/GReD-Clermont/omero_batch-plugin/releases/download/1.0.5/omero_batch-plugin-1.0.5.jar
+mv omero_batch-plugin-1.0.5.jar /ifb/bin/Fiji.app/plugins/
+
+# 3. omero_macro-extensions
+curl -LJO https://github.com/GReD-Clermont/omero_macro-extensions/releases/download/1.3.2/omero_macro-extensions-1.3.2.jar
+mv omero_macro-extensions-1.3.2.jar /ifb/bin/Fiji.app/plugins/
+
+# 4. Install NucleusJ2.1 
+curl -LJO https://github.com/GReD-Clermont/NucleusJ2/releases/download/v2.1.0/nucleusj_2-2.1.0.jar
+mv nucleusj_2-2.1.0.jar /ifb/bin/Fiji.app/plugins/
+
+#5. Install NODeJ
+
+
+
+
+
+
 
 
 
